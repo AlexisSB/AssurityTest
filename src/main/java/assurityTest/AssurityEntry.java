@@ -43,7 +43,80 @@ public class AssurityEntry {
     @SerializedName("CanBeSecondCategory")
     private boolean canBeSecondCategory;
 
+    public int getCategoryID() {
+        return categoryID;
+    }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getPath() {
+        return path;
+    }
+
+    public boolean isCanListAuctions() {
+        return canListAuctions;
+    }
+
+    public boolean isCanListClassifieds() {
+        return canListClassifieds;
+    }
+
+    public boolean isCanRelist() {
+        return canRelist;
+    }
+
+    public int getDefaultDuration() {
+        return defaultDuration;
+    }
+
+    public int[] getAllowedDurations() {
+        return allowedDurations;
+    }
+
+    public Fees getFees() {
+        return fees;
+    }
+
+    public int getFreePhotoCount() {
+        return freePhotoCount;
+    }
+
+    public int getMaximumPhotoCount() {
+        return maximumPhotoCount;
+    }
+
+    public Charity[] getCharities() {
+        return charities;
+    }
+
+    public Promotion[] getPromotions() {
+        return promotions;
+    }
+
+    public int[] getEmbeddedContentOptions() {
+        return embeddedContentOptions;
+    }
+
+    public int getMaximumTitleLength() {
+        return maximumTitleLength;
+    }
+
+    public int getAreaOfBusiness() {
+        return areaOfBusiness;
+    }
+
+    public int getDefaultRelistDuration() {
+        return defaultRelistDuration;
+    }
+
+    public boolean isCanHaveSecondCategory() {
+        return canHaveSecondCategory;
+    }
+
+    public boolean isCanBeSecondCategory() {
+        return canBeSecondCategory;
+    }
 
 }

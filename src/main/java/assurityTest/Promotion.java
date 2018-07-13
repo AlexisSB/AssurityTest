@@ -2,7 +2,7 @@ package assurityTest;
 
 import com.google.gson.annotations.SerializedName;
 
-class Promotion {
+public class Promotion {
 
     @SerializedName("Id")
     private int id;
@@ -14,5 +14,25 @@ class Promotion {
     private double price;
     @SerializedName("MinimumPhotoCount")
     private int minimumPhotoCount;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getMinimumPhotoCount() {
+        return minimumPhotoCount;
+    }
 
 }

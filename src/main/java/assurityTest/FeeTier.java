@@ -9,5 +9,12 @@ public class FeeTier {
     @SerializedName("PercentageFee")
     private double percentageFee;
 
+    public int getMinimumTierPrice() {
+        return minimumTierPrice;
+    }
+
+    public double getPercentageFee() {
+        return percentageFee;
+    }
 
 }

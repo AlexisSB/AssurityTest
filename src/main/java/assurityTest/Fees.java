@@ -29,4 +29,52 @@ public class Fees {
     @SerializedName("SecondCategory")
     private double secondCategroy;
 
+    public double getBundle() {
+        return bundle;
+    }
+
+    public double getEndDate() {
+        return endDate;
+    }
+
+    public double getFeature() {
+        return feature;
+    }
+
+    public double getGallery() {
+        return gallery;
+    }
+
+    public double getReserve() {
+        return reserve;
+    }
+
+    public double getSubtitle() {
+        return subtitle;
+    }
+
+    public double getTenDays() {
+        return tenDays;
+    }
+
+    public double getWithdrawal() {
+        return withdrawal;
+    }
+
+    public double getHighVolume() {
+        return highVolume;
+    }
+
+    public double getMaximumSuccessFee() {
+        return maximumSuccessFee;
+    }
+
+    public FeeTier[] getSuccessFeeTiers() {
+        return successFeeTiers;
+    }
+
+    public double getSecondCategroy() {
+        return secondCategroy;
+    }
+
 }
