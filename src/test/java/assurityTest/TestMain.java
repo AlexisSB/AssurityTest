@@ -85,7 +85,6 @@ public class TestMain {
             }
         }
 
-
         assertNotNull("No charity found with that description", targetCharity);
 
         //Search target charity for target tagline text.
