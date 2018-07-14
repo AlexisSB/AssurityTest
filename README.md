@@ -2,10 +2,10 @@
 
 Submission for Alexis Barltrop, July 2018.
 
-###Dependencies
+#### Dependencies
 * Requires maven for the build.
 
-###Build Process
+#### Build Process
 * Enter `mvn clean test` in the project root directory.
 * Maven will build the process and run the tests.
 
