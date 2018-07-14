@@ -21,10 +21,10 @@ public class TestMain {
         try {
             //Read file in
             String testFilePath = "./AssurityAPI.json";
-
             File testJsonFile = new File(testFilePath);
             Scanner scanner = new Scanner(testJsonFile);
             StringBuilder fileStringBuilder = new StringBuilder();
+
             //Convert file to string
             while(scanner.hasNextLine()) {
                 fileStringBuilder.append(scanner.nextLine());
@@ -42,22 +42,7 @@ public class TestMain {
 
 
     }
-
-    /*@Test
-    public void testStartUp(){
-        System.out.println(fileString);
-    }
-    */
-
-    /*
-    @Test
-    public void testConversionJSONToJava(){
-        String assurityEntryJsonString = gson.toJson(assurityEntry);
-        System.out.println(assurityEntryJsonString);
-
-    }
-    */
-
+        
     @Test
     public void testAssertionOne(){
         String targetString = "Badges";
@@ -73,11 +58,9 @@ public class TestMain {
     public void testAssertionThree(){
         String targetCharityDescription = "Plunket";
         String targetCharityTagline = "well child health services";
-
-        //Search through charities to find target matching description
         Charity targetCharity = null;
 
-
+        //Search through charities to find target matching description
         for(Charity c : assurityEntry.getCharities()){
             if (c.getDescription().equals(targetCharityDescription)){
                 targetCharity = c;
@@ -92,11 +75,10 @@ public class TestMain {
 
     }
 
-    public String getFileNameInput(){
-        Scanner input = new Scanner(System.in);
-        String fileName = input.nextLine();
-        System.out.println(fileName);
-        return fileName;
+    public void printJavaToJSON(){
+        String assurityEntryJsonString = gson.toJson(assurityEntry);
+        System.out.println(assurityEntryJsonString);
+
     }
 
 }

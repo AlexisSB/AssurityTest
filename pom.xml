@@ -8,15 +8,7 @@
     <artifactId>Test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <dependencies>
-        <!-- Junit Test dependencies -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
 
         <!-- Google JSON Parser -->
         <dependency>
@@ -32,6 +24,8 @@
             <artifactId>json</artifactId>
             <version>20180130</version>
         </dependency>
+
+        <!-- Junit Test dependencies -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
